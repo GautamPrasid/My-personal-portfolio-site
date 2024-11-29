@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+  }
+ .nav-container{
+    color: #000;
+    width: 100%;
+    height: 1000%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+ .logo{
+    color: rgb(9, 63, 2);
+    font-size: 2rem;
+    font-weight: bold;
+ }
+     
+ .logo span{
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
+ }
+     
+ .hamburg,
+ .cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: rgb(1, 41, 25);
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+ }
+     
+ .nav-container .links{
+    display: flex;
+ }
+     
+ .nav-container .links a{
+   position: relative;
+   font-size: 1.2rem;
+   color: rgb(0, 75, 20);
+   margin: 0 20px;
+   text-decoration: none;
+   font-weight: 550;
+   transition: 0.3s linear;
+ }
+     
+ .nav-container .links a::before{
+   position: absolute;
+   content: "";
+   bottom: -3px;
+   left: 0;
+   width: 0%;
+   height: 3px;
+   background-color: #077b32;
+   transition: 0.2s linear;
+ }
+     
+ .nav-container .links a:hover::before{
+    width: 100%;
+ }
+     
+ .nav-container .links a:hover{
+    color: #077b32;
+ }
+ 
+
+.hero-content {
+    text-align: center;
+    padding: 400px 20px;
+    background-color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.service h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+.hire-section {
+    text-align: center;
+    color: white;
+}
+
+.hire-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.hire-section .btn {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-media {
+    margin-top: 20px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
