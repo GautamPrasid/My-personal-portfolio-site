@@ -110,7 +110,7 @@ nav{
 	position: absolute;
 	width: 50%;
 	height: 3px;
-	background-color: #d03645;
+	background-color: #032e0c;
 	top: calc(125% - 1px);
 	left: 50%;
 	transform: translateX(-50%);
@@ -151,7 +151,7 @@ nav{
 	height: 3px;
 	top: calc(125% - 1px);
 	left: 0;
-	background-color: #d03645;
+	background-color: #02301d;
 }
 .subject{
 	font-size: 18px;
@@ -173,14 +173,14 @@ nav{
 	content: attr(value);
 	top: -35px;
 	right: 0;
-	color: #ffffff;
+	color: #fdfffe;
 	font-size: 18px;
 }
 .progress-line{
 	position: absolute;
 	width: 0%;
 	height: 7px;
-	background-color: #d03645;
+	background-color: #0c3102;
 	border-radius: 15px;
 	top: -1px;
 	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
@@ -199,7 +199,7 @@ nav{
 	top: 50%;
 	left: 100%;
 	transform: translate(-50%, -50%);
-	background-color: #d03645;
+	background-color: #023b05;
 }
 @media(max-width: 768px){
 	.container{
