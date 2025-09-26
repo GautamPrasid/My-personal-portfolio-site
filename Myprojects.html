@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Myprojects.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Projects - Prasid Gautam Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                Prasid <span>Gautam</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
+                        href="home.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="about.html">about</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                        href="contact.html">Contact</a></div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-container">
+        <h1>My Projects by Language</h1>
+
+        <!-- Language Tabs -->
+        <div class="tabs">
+            <button class="tablinks" onclick="openLanguage(event, 'Python')">Python</button>
+            <button class="tablinks" onclick="openLanguage(event, 'HTML')">HTML</button>
+            <button class="tablinks" onclick="openLanguage(event, 'Java')">Java</button>
+            <button class="tablinks" onclick="openLanguage(event, 'JavaScript')">JavaScript</button>
+            <button class="tablinks" onclick="openLanguage(event, 'C')">C</button>
+        </div>
+
+        <!-- Python Projects -->
+        <div id="Python" class="tabcontent">
+            <h2>Python Projects</h2>
+            <div class="projects">
+                <!-- Python Project 1 -->
+                <div class="project-card">
+                    <img src="python_project1.jpg" alt="Python Project 1" class="project-img">
+                    <h2>Python Project 1</h2>
+                    <p>Python-based automation tool to scrape data from websites.</p>
+                    <button onclick="showDetails('python1')">View Details</button>
+                    <div id="python1" class="project-details">
+                        <p><strong>Technologies:</strong> Python, BeautifulSoup</p>
+                        <p><strong>Description:</strong> A script for web scraping to collect and store data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HTML Projects -->
+        <div id="HTML" class="tabcontent">
+            <h2>HTML Projects</h2>
+            <div class="projects">
+                <!-- HTML Project 1 -->
+                <div class="project-card">
+                    <img src="html_project1.jpg" alt="HTML Project 1" class="project-img">
+                    <h2>HTML Project 1</h2>
+                    <p>Basic website with HTML5 and CSS3.</p>
+                    <button onclick="showDetails('html1')">View Details</button>
+                    <div id="html1" class="project-details">
+                        <p><strong>Technologies:</strong> HTML, CSS</p>
+                        <p><strong>Description:</strong> A responsive web page with modern design principles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Java Projects -->
+        <div id="Java" class="tabcontent">
+            <h2>Java Projects</h2>
+            <div class="projects">
+                <!-- Java Project 1 -->
+                <div class="project-card">
+                    <img src="java_project1.jpg" alt="Java Project 1" class="project-img">
+                    <h2>Java Project 1</h2>
+                    <p>A console-based application for managing student records.</p>
+                    <button onclick="showDetails('java1')">View Details</button>
+                    <div id="java1" class="project-details">
+                        <p><strong>Technologies:</strong> Java, MySQL</p>
+                        <p><strong>Description:</strong> A CRUD app for managing student data with Java and MySQL
+                            database.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript Projects -->
+        <div id="JavaScript" class="tabcontent">
+            <h2>JavaScript Projects</h2>
+            <div class="projects">
+                <!-- JavaScript Project 1 -->
+                <div class="project-card">
+                    <img src="javascript_project1.jpg" alt="JavaScript Project 1" class="project-img">
+                    <h2>JavaScript Project 1</h2>
+                    <p>Interactive to-do list web app built with vanilla JavaScript.</p>
+                    <button onclick="showDetails('js1')">View Details</button>
+                    <div id="js1" class="project-details">
+                        <p><strong>Technologies:</strong> JavaScript, HTML, CSS</p>
+                        <p><strong>Description:</strong> A to-do list app using local storage to save tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- C Projects -->
+        <div id="C" class="tabcontent">
+            <h2>C Projects</h2>
+            <div class="projects">
+                <!-- C Project 1 -->
+                <div class="project-card">
+                    <img src="c_project1.jpg" alt="C Project 1" class="project-img">
+                    <h2>C Project 1</h2>
+                    <p>A C-based banking system for managing user accounts.</p>
+                    <button onclick="showDetails('c1')">View Details</button>
+                    <div id="c1" class="project-details">
+                        <p><strong>Technologies:</strong> C, File I/O</p>
+                        <p><strong>Description:</strong> A command-line banking system with features like account
+                            creation and money transfer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Myprojects.js"></script>
+</body>
+
+</html>

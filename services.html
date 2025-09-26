@@ -3,63 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="service.css">
-    
-    <div class="nav-container">
-        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-            Prasid <span>Gautam</span>
-        </div>
-        <div class="links">
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="home.html">Home</a></div>
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skills</a></div>
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="about.html">about</a></div>
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
-
-    </div>
-    <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-</div>
+    <title>Services - Prasid Portfolio</title>
 </head>
 <body>
-    <section id="home">
-        <div class="hero-content">
-            <h1>Your one-stop solution for tech services!</h1>
-            <a href="contact.html" class="btn">Hire Me</a>
+    <nav>
+        <div class="nav-container">
+            <a href="home.html" class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Prasid <span>Gautam</span>
+            </a>
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="Myprojects.html">Projects</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <i class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+            <h1>My <span>Services</span></h1>
+            <p>Professional solutions for your digital needs</p>
         </div>
     </section>
 
-    <section id="services" class="services-section">
-        <h2>Services I Provide</h2>
+    <section class="services-section">
         <div class="services">
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <i class="fas fa-code"></i>
                 <h3>Web Development</h3>
                 <p>Build modern and responsive websites using the latest technologies.</p>
             </div>
-            <div class="service">
-                <h3>Vedio Eaditer </h3>
-                <p>Edit vedio and Photos.</p>
+            <div class="service" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                <i class="fas fa-video"></i>
+                <h3>Video Editing</h3>
+                <p>Professional video editing and post-production services.</p>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                <i class="fas fa-paint-brush"></i>
                 <h3>UI/UX Design</h3>
                 <p>Design user-friendly interfaces with great user experiences.</p>
             </div>
         </div>
     </section>
 
- 
-
-    <footer>
-        <div class="footer-content">
-        <p>© 2024 Prasid Gautam. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/prashidgautam/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/user_on_break__" target="_blank">Instagram</a>
-            <a href="https://x.com/prasid222" target="_blank">X.com</a>
-            <a href="https://github.com/Prashidgautam" target="_blank">Github</a>
-        </div>
-        </div>
-    </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
     <script src="services.js"></script>
 </body>
 </html>

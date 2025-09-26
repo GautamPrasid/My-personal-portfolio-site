@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="contact.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <title>Contact Me</title>
 </head>
 <body>
-
-    <header>
-    <div class="nav-container">
-        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-            Prasid <span>Gautam</span>
+    <nav>
+        <div class="nav-container">
+            <a href="home.html" class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Prasid <span>Gautam</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Myprojects.html">Projects</a></li>
+            </ul>
         </div>
-        <div class="links">
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="home.html">Home</a></div>
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skills</a></div>
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="services.html">Services</a></div>
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="about.html">About</a></div>
-    </div>
-        </nav>
-    </header>
-    
-    <main>
-        <div class="contact-container">
-            <h1>Contact Us</h1>
-            <p>We'd love to hear from you! Reach out through the information below.</p>
-            
+    </nav>
+
+    <section>
+        <div class="contact-container" data-aos="fade-up" data-aos-duration="1500">
+            <h1>Get In Touch</h1>
             <div class="contact-info">
-                <div class="info-item">
-                    <i class="icon">📞</i>
+                <div class="info-item" data-aos="fade-right" data-aos-delay="200">
+                    <i class="fa-solid fa-phone"></i>
                     <p>+977-9847758849</p>
                 </div>
-                <div class="info-item">
-                    <i class="icon">📍</i>
+                <div class="info-item" data-aos="fade-right" data-aos-delay="400">
+                    <i class="fa-solid fa-location-dot"></i>
                     <p>Pokhara, Nepal</p>
                 </div>
-                <div class="info-item">
-                    <i class="icon">⏰</i>
-                    <p>Opening Hours: Mon - Fri: 9 AM - 5 PM</p>
+                <div class="info-item" data-aos="fade-right" data-aos-delay="600">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>prashidgautam@gmail.com</p>
                 </div>
             </div>
 
-            <form id="contact-form">
+            <form id="contact-form" data-aos="fade-up" data-aos-delay="800">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit">Send Message</button>
             </form>
-        </div>
-    </main>
 
-    <footer>
-        <p>© 2024 Prasid Gautam. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/prashidgautam/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/user_on_break__" target="_blank">Instagram</a>
-            <a href="https://x.com/prasid222" target="_blank">X.com</a>
-            <a href="https://github.com/Prashidgautam" target="_blank">Github</a>
+            <div class="social-links">
+                <a href="https://github.com/Prashidgautam" data-aos="fade-up" data-aos-delay="1000"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/prashidgautam/" data-aos="fade-up" data-aos-delay="1100"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/user_on_break__/" data-aos="fade-up" data-aos-delay="1200"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/prasid222" data-aos="fade-up" data-aos-delay="1300"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@prasid22" data-aos="fade-up" data-aos-delay="1400"><i class="fa-brands fa-youtube"></i></a>
+            </div>
         </div>
-    </footer>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
     <script src="contact.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ nav{
 	align-items: center;
 }
 .logo{
-	color: rgb(9, 63, 2);
+	color: white;
 	font-size: 2rem;
 	font-weight: bold;
 }
@@ -51,7 +51,7 @@ nav{
 .nav-container .links a{
 	position: relative;
 	font-size: 1.2rem;
-	color: rgb(0, 75, 20);
+	color: white;
 	margin: 0 20px;
 	text-decoration: none;
 	font-weight: 550;
@@ -110,7 +110,7 @@ nav{
 	position: absolute;
 	width: 50%;
 	height: 3px;
-	background-color: #032e0c;
+	background-color: #077b32;
 	top: calc(125% - 1px);
 	left: 50%;
 	transform: translateX(-50%);
@@ -180,7 +180,7 @@ nav{
 	position: absolute;
 	width: 0%;
 	height: 7px;
-	background-color: #0c3102;
+	background-color: #077b32;
 	border-radius: 15px;
 	top: -1px;
 	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
